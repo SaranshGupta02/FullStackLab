@@ -1,0 +1,119 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --primary: #4f46e5;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --border: #1f2937;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(1200px 800px at 20% 0%, #111827 0%, #0b1024 65%, #050816 100%), var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  max-width: 520px;
+  margin: 6rem auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 15px 60px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+form {
+  display: grid;
+}
+
+.field { display: grid; gap: 0.4rem; }
+
+label {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #0b1229;
+  color: var(--text);
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+input[type="password"]{
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #0b1229;
+  color: var(--text);
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+  margin-bottom: 0.4rem;
+}
+
+input::placeholder { color: #6b7280; }
+
+input:focus {
+  border-color: #334155;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.18);
+}
+
+input.invalid {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.15);
+}
+
+small.hint {
+  color: var(--muted);
+}
+
+small.error {
+  min-height: 1.1em;
+  color: var(--danger);
+}
+
+.success {
+  margin-top: 0.5rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.submit-btn {
+  margin-top: 0.25rem;
+  padding: 0.9rem 1.1rem;
+  background: linear-gradient(180deg, #5b54f6, #4f46e5);
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 80ms ease, filter 150ms ease;
+}
+
+.submit-btn:hover { filter: brightness(1.03); }
+.submit-btn:active { transform: translateY(1px); }
+

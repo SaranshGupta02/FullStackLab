@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Code Validator</h1>
+        <p class="description">Enter your HTML code in the text area below. The validator will check for syntax errors, missing tags, and other common HTML issues.</p>
+        
+        <div class="input-section">
+            <label for="htmlCode">Enter HTML Code:</label>
+            <textarea id="htmlCode" placeholder="<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>"></textarea>
+            <div class="button-group">
+                <button id="validateBtn">Validate HTML</button>
+                <button id="clearBtn">Clear</button>
+                <button id="formatBtn">Format Code</button>
+            </div>
+        </div>
+
+        <div class="output-section">
+            <h2>Validation Results</h2>
+            <div id="validationResults">
+                <div class="no-results">
+                    <p>Click "Validate HTML" to check your code</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

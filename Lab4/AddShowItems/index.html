@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Show Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add and Show Items</h1>
+        <p class="description">Add items to your list and display them when needed.</p>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="itemInput" placeholder="Enter an item to add to the list...">
+                <div class="button-group">
+                    <button id="addBtn">Add Item</button>
+                    <button id="showBtn">Show Items</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-section">
+            <div class="list-header">
+                <h2>Your Items</h2>
+                <div class="item-count">
+                    <span id="itemCount">0</span> item(s)
+                </div>
+            </div>
+            <div id="listContainer" class="list-container">
+                <div class="no-items">
+                    <p>No items added yet. Add some items and click "Show Items" to display them.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Type an item in the input box and click "Add Item" to store it</li>
+                <li>Click "Show Items" to display all stored items in an unordered list</li>
+                <li>Items are stored in memory and persist until page refresh</li>
+                <li>You can add multiple items before showing them</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

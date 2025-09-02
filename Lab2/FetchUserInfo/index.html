@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information Extractor</h1>
+        <p class="description">Enter your personal information in paragraph format below. The system will automatically extract and display the information in a table.</p>
+        
+        <div class="input-section">
+            <label for="personalInfo">Enter Personal Information:</label>
+            <textarea id="personalInfo" placeholder="Example: My name is John Doe, email is john.doe@email.com, mobile number is 9876543210, IP address is 192.168.1.1, date of birth is 15-03-1990, and pin code is 123456."></textarea>
+            <button id="extractBtn">Extract Information</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Extracted Information</h2>
+            <div id="tableContainer">
+                <table id="infoTable">
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td id="name">-</td>
+                        </tr>
+                        <tr>
+                            <td>Email ID</td>
+                            <td id="email">-</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Number</td>
+                            <td id="mobile">-</td>
+                        </tr>
+                        <tr>
+                            <td>IP Address</td>
+                            <td id="ip">-</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td id="dob">-</td>
+                        </tr>
+                        <tr>
+                            <td>Pin Code</td>
+                            <td id="pincode">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
