@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic List Manager</h1>
+        <p class="description">Add and remove items from your list dynamically. See the current count of items below.</p>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="itemInput" placeholder="Enter an item to add to the list...">
+                <div class="button-group">
+                    <button id="addBtn">Add Item</button>
+                    <button id="deleteBtn">Delete Item</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-section">
+            <div class="list-header">
+                <h2>Your List</h2>
+                <div class="item-count">
+                    <span id="itemCount">0</span> item(s)
+                </div>
+            </div>
+            <ul id="itemList" class="item-list">
+                <!-- Items will be added here dynamically -->
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Type an item in the input box and click "Add Item" to add it to the list</li>
+                <li><strong>Delete Item:</strong> 
+                    <ul style="margin-top: 8px; margin-left: 20px;">
+                        <li><strong>Echo mode:</strong> Leave input empty and click "Delete Item" to remove the last item</li>
+                        <li><strong>Specific mode:</strong> Type the exact item name and click "Delete Item" to remove that specific item</li>
+                    </ul>
+                </li>
+                <li>The item count updates automatically</li>
+                <li>You can also press Enter in the input field to add items quickly</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

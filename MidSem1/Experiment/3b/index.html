@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-time Form Validation</h1>
+        <p class="description">Fill out the form below. All fields are validated in real-time as you type, without needing a separate validate button.</p>
+        
+        <form id="validationForm" class="form">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
+                <div class="validation-message" id="nameMessage"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <div class="validation-message" id="emailMessage"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob">
+                <div class="validation-message" id="dobMessage"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="pincode">Pincode *</label>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter 6-digit pincode" maxlength="6">
+                <div class="validation-message" id="pincodeMessage"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" maxlength="10">
+                <div class="validation-message" id="mobileMessage"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="ip">IP Address *</label>
+                <input type="text" id="ip" name="ip" placeholder="Enter IP address (e.g., 192.168.1.1)">
+                <div class="validation-message" id="ipMessage"></div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" id="clearBtn">Clear Form</button>
+                <button type="submit" id="submitBtn" disabled>Submit Form</button>
+            </div>
+        </form>
+
+        <div class="validation-summary">
+            <h3>Validation Summary</h3>
+            <div id="summaryContent">
+                <p>Start filling the form to see real-time validation results.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

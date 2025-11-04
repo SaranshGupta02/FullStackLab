@@ -1,0 +1,120 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Production build
+build/
+dist/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+
+# Static asset build output (like Webpack or Vite)
+public/build/
+public/dist/
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional npm cache directory
+.npm
+.pnpm-debug.log
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Optional eslint cache
+.eslintcache
+
+# Parcel cache
+.cache/
+.parcel-cache/
+
+# Next.js build output
+.next/
+out/
+
+# Nuxt.js build / generate output
+.nuxt/
+dist/
+
+# Gatsby files
+.cache/
+public
+
+# Vuepress build output
+.vuepress/dist
+
+# Storybook build outputs
+.out/
+storybook-static/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Mac system files
+.DS_Store
+
+# Temporary files
+*.tmp
+temp/
+cache/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Editor backups
+*~
+*.swp
+*.swo
+
+# Optional lock files (uncomment if not using these managers)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Docker files
+docker-compose.override.yml
+docker-compose.dev.yml
+
+# React Native / Expo
+.expo/
+.expo-shared/

@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #61dafb;
+}
+
+.counter-container {
+  background-color: white;
+  color: #333;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.counter-display {
+  margin-bottom: 2rem;
+}
+
+.counter-display h2 {
+  font-size: 2rem;
+  color: #61dafb;
+  margin: 0;
+}
+
+.input-section {
+  margin-bottom: 2rem;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-section input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.input-section input:focus {
+  outline: none;
+  border-color: #61dafb;
+}
+
+.input-section button {
+  padding: 0.5rem 1rem;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.input-section button:hover {
+  background-color: #4fa8c5;
+}
+
+.button-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.increment-btn, .reset-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.increment-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.increment-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.reset-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.reset-btn:hover {
+  background-color: #da190b;
+  transform: translateY(-2px);
+}
