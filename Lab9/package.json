@@ -1,0 +1,21 @@
+{
+  "name": "lab9-nodejs-http-server",
+  "version": "1.0.0",
+  "description": "Simple HTTP server in Node.js with comprehensive logging",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "http-server",
+    "logging",
+    "lab9"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
